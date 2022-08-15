@@ -1,4 +1,4 @@
-import 'package:data_oson_aptek/src/ui/data_oson_aptek.dart';
+import 'package:data_oson_aptek/src/ui/data_oson_aptek_message.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const DataOsonAtek(),
+      home: const DataOsonAptekMessage(),
     );
   }
 }
