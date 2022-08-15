@@ -15,10 +15,12 @@ class OsonAptekMessageModel {
   OsonAptekMessageModel({
     required this.id,
     required this.name,
+    this.liked = false,
   });
 
   int id;
   String name;
+  bool liked;
 
   factory OsonAptekMessageModel.fromJson(Map<String, dynamic> json) =>
       OsonAptekMessageModel(
@@ -26,7 +28,8 @@ class OsonAptekMessageModel {
         name: json["name"] ?? "",
       );
 
-  Map<String, dynamic> toJson() => {
+  Map<String, dynamic> toJson() =>
+      {
         "id": id,
         "name": name,
       };
